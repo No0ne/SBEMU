@@ -64,6 +64,7 @@ extern one_sndcard_info TRIDENT_sndcard_info;
 extern one_sndcard_info ALS4000_sndcard_info;
 extern one_sndcard_info OXYGEN_sndcard_info;
 extern one_sndcard_info ALLEGRO_sndcard_info;
+extern one_sndcard_info GEODE_sndcard_info;
 extern one_sndcard_info YMF_sndcard_info;
 extern one_sndcard_info YMFSB_sndcard_info;
 #ifndef SBEMU
@@ -104,6 +105,9 @@ static one_sndcard_info *all_sndcard_info[]={
 #endif
 #ifdef AU_CARDS_LINK_ALLEGRO
  &ALLEGRO_sndcard_info,
+#endif
+#ifdef AU_CARDS_LINK_GEODE
+ &GEODE_sndcard_info,
 #endif
 #ifdef AU_CARDS_LINK_ALS4000
  &ALS4000_sndcard_info,
